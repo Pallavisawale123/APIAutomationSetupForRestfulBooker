@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Automation Suite">
+    <listeners>
+        <listener class-name="com.automation.restfulbooker.helper.TestListeners"/>
+        <listener class-name="com.automation.restfulbooker.helper.RetryListener"/>
+
+    </listeners>
+    <test name="API Automation Test Cases">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.automation.restfulbooker.API.RestfulBooker">
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
