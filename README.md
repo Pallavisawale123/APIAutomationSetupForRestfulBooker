@@ -20,4 +20,34 @@ It uses REST-assured, TestNG, and Jackson for serialization/deserialization, and
 - Spring Boot (for test context loading)
 
 ## 📂 Project Structure for restfulbooker
-restfulbooker/ ├── src/ │ ├── main/ │ │ ├── java/ │ │ │ └── com.automation.restfulbooker/ │ │ │ ├── enums/ // Constants (e.g., Content-Type, Status Codes) │ │ │ ├── POJO/ // Plain Java Objects (Request/Response Body Models) │ │ │ ├── utils/ // Utility classes (Common functions, Config readers, etc.) │ │ │ └── RestfulbookerApplication // Main application runner (optional in tests) │ │ └── resources/ │ │ └── application.properties // Configuration (Base URL, Credentials, etc.) │ ├── test/ │ │ ├── java/ │ │ │ └── com.automation.restfulbooker/ │ │ │ ├── API/ // Actual API Test Cases │ │ │ ├── helper/ // Helper methods for API calls, payload builders, etc. │ │ │ └── RestfulbookerApplicationTests.java // (Optional) Test Bootstrap or initial sanity tests │ ├── resources/ │ │ └── (Optional test data files like JSONs, CSVs, XMLs) ├── suites/ │ └── testng.xml // TestNG Suite file to organize and run test cases ├── pom.xml // Maven dependencies and plugins └── README.md // Project documentation (optional)
+```
+restfulbooker/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/automation/restfulbooker/
+│   │   │       ├── enums/                  // Constants (e.g., Content-Type, Status Codes)
+│   │   │       ├── POJO/                    // Plain Java Objects (Request/Response Body Models)
+│   │   │       ├── utils/                   // Utility classes (Common functions, Config readers, etc.)
+│   │   │       └── RestfulbookerApplication.java  // Main application runner (optional)
+│   │   └── resources/
+│   │       └── application.properties       // Configuration (Base URL, Credentials, etc.)
+│
+├── src/
+│   ├── test/
+│   │   ├── java/
+│   │   │   └── com/automation/restfulbooker/
+│   │   │       ├── API/                     // Actual API Test Cases
+│   │   │       ├── helper/                  // Helper methods for API calls, payload builders, etc.
+│   │   │       └── RestfulbookerApplicationTests.java  // (Optional) Test Bootstrap or initial sanity tests
+│   ├── resources/
+│   │   └── (Optional) test data files (JSON, CSV, XML)
+│
+├── suites/
+│   └── testng.xml                           // TestNG Suite file to organize and run test cases
+│
+├── pom.xml                                   // Maven dependencies and plugins
+├── README.md                                 // Project documentation (optional)
+└── target/                                   // Build output (generated automatically)
+```
+
