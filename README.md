@@ -51,3 +51,8 @@ restfulbooker/
 └── target/                                   // Build output (generated automatically)
 ```
 
+
+## Run Project 
+mvn clean test -Dsurefire.suiteXmlFiles=suites/restBooker.xml
+
+
