@@ -53,6 +53,6 @@ restfulbooker/
 
 
 ## Run Project 
-mvn clean test -Dsurefire.suiteXmlFiles=suites/restBooker.xml
+mvn clean test
 
 
