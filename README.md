@@ -41,7 +41,7 @@ restfulbooker/
 │   │   │       ├── helper/                  // Helper methods for API calls, payload builders, etc.
 │   │   │       └── RestfulbookerApplicationTests.java  // (Optional) Test Bootstrap or initial sanity tests
 │   ├── resources/
-│   │   └── (Optional) test data files (JSON, CSV, XML)
+│   │   └── application.properties       // Configuration (Base URL, Credentials, etc.)
 │
 ├── suites/
 │   └── testng.xml                           // TestNG Suite file to organize and run test cases
