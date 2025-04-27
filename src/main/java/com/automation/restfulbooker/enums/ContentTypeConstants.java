@@ -1,7 +1,5 @@
 package com.automation.restfulbooker.enums;
 
-import io.restassured.http.ContentType;
-
 /**
  * @author psawale
  * @project restfulbooker

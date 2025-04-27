@@ -48,17 +48,6 @@ public class AssertHelper {
         }
     }
 
-    public void assertNotEquals(Object expected, Object actual, String message) {
-        try {
-            Assert.assertNotEquals(actual, expected, message);
-        } catch (AssertionError e) {
-            String errorMsg = String.format("assert NotEquals failure expected: %s, actual: %s",
-                    expected, actual);
-            log.error("assert NotEquals failure: {}", message);
-            Assert.fail(errorMsg);
-        }
-    }
-
     public static void assertNotNull(Object actual, String message) {
         try {
             Assert.assertNotEquals(actual, message);
@@ -66,6 +55,17 @@ public class AssertHelper {
             String errorMsg = String.format("assert assertNotNull failure actual: %s"
                     , actual);
             log.error("assert assertNotNull failure: {}", message);
+            Assert.fail(errorMsg);
+        }
+    }
+
+    public void assertNotEquals(Object expected, Object actual, String message) {
+        try {
+            Assert.assertNotEquals(actual, expected, message);
+        } catch (AssertionError e) {
+            String errorMsg = String.format("assert NotEquals failure expected: %s, actual: %s",
+                    expected, actual);
+            log.error("assert NotEquals failure: {}", message);
             Assert.fail(errorMsg);
         }
     }

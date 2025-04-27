@@ -11,8 +11,8 @@ import org.testng.ITestResult;
 
 public class FailRetry implements IRetryAnalyzer {
 
-    private int retryCount = 0;
     private static final int maxRetryCount = 2;
+    private int retryCount = 0;
 
     @Override
     public boolean retry(ITestResult result) {
