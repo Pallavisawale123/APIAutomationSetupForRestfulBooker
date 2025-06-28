@@ -11,7 +11,7 @@ It uses REST-assured, TestNG, and Jackson for serialization/deserialization, and
 -  Modular design with config and test data utilities
 -  TestNG framework support with custom assertions
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - Java
 - REST-assured
@@ -19,7 +19,7 @@ It uses REST-assured, TestNG, and Jackson for serialization/deserialization, and
 - Jackson (for JSON POJOs)
 - Spring Boot (for test context loading)
 
-## 📂 Project Structure for restfulbooker
+## Project Structure for restfulbooker
 ```
 restfulbooker/
 ├── src/
